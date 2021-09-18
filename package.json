@@ -1,0 +1,18 @@
+{
+    "name": "uview-uni-cli",
+    "version": "1.0.2",
+    "description": "基于uview的uni-app模板",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "uview"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "jweixin-module": "^1.6.0"
+    },
+    "id": "dyun-uview-uni-cli"
+}

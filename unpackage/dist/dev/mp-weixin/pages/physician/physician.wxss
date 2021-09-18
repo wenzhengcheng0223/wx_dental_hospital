@@ -1,0 +1,67 @@
+
+.content {
+	background-color: #fafafa;
+}
+.card-view {
+	background-color: #fafafa;
+	border-bottom: 5px solid #fdfdfd;
+}
+
+/* 医师团队 */
+.m-title {
+	bottom: 30%;
+	width: 780rpx;
+	color: #1b5793;
+	font-weight: 700;
+	font-size: 52rpx;
+}
+.m-font {
+	bottom: 0%;
+	background-color: #2f303260;
+	width: 780rpx;
+	height: 60rpx;
+	padding-top: 15rpx;
+	font-size: 32rpx;
+	font-weight: 300;
+	color: #fefefe;
+}
+
+/* card区域文字 */
+.card-title {
+	font-weight: 400;
+}
+.card-sub-title {
+	font-size: 24rpx;
+	color: #868686;
+}
+
+/* 提表预约 */
+.m-register {
+	margin-top: 5rpx;
+	width: 780rpx;
+	height: 100rpx;
+	background-color: #f4f4f4;
+	font-size: 50rpx;
+	font-weight: 400;
+	color: #159fde;
+	text-align: center;
+}
+.m-register-font {
+	width: 780rpx;
+	height: 45rpx;
+	background-color: #33333370;
+	color: #FEFEFE;
+	text-align: center;
+	bottom: 3%;
+}
+.m-register-font text {
+	position: absolute;
+	bottom: 2%;
+	left: 43%;
+}
+
+/* form表单 */
+.m-form {
+	padding: 0rpx 30rpx;
+}
+

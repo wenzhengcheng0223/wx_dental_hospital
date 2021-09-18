@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["components/my-swiper/my-swiper"],{"0287":function(e,t,n){"use strict";n.d(t,"b",(function(){return a})),n.d(t,"c",(function(){return u})),n.d(t,"a",(function(){return c}));var c={uSwiper:function(){return n.e("uview-ui/components/u-swiper/u-swiper").then(n.bind(null,"ed06"))}},a=function(){var e=this,t=e.$createElement;e._self._c},u=[]},"10bd":function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var c={data:function(){return{list:[{image:"https://vkceyugu.cdn.bspapp.com/VKCEYUGU-a9e890e8-9456-42bd-8ad5-cc3d81f39d95/b34ab308-7b9b-4ea5-abbf-fe8a1168eb71.jpg",title:"昨夜星辰昨夜风，画楼西畔桂堂东"},{image:"https://vkceyugu.cdn.bspapp.com/VKCEYUGU-a9e890e8-9456-42bd-8ad5-cc3d81f39d95/6f202eee-2936-4223-8053-48af6e3614f3.jpg",title:"身无彩凤双飞翼，心有灵犀一点通"},{image:"https://vkceyugu.cdn.bspapp.com/VKCEYUGU-a9e890e8-9456-42bd-8ad5-cc3d81f39d95/7202276c-b626-4e53-a397-f992f929798f.jpg",title:"谁念西风独自凉，萧萧黄叶闭疏窗，沉思往事立残阳"},{image:"https://vkceyugu.cdn.bspapp.com/VKCEYUGU-a9e890e8-9456-42bd-8ad5-cc3d81f39d95/1397a7c2-a05b-4af3-9182-a85d1182929f.jpg",title:"谁念西风独自凉，萧萧黄叶闭疏窗，沉思往事立残阳"}]}},onLoad:function(){},methods:{}};t.default=c},"1d3b":function(e,t,n){"use strict";n.r(t);var c=n("10bd"),a=n.n(c);for(var u in c)"default"!==u&&function(e){n.d(t,e,(function(){return c[e]}))}(u);t["default"]=a.a},"687f":function(e,t,n){},"9c96":function(e,t,n){"use strict";n.r(t);var c=n("0287"),a=n("1d3b");for(var u in a)"default"!==u&&function(e){n.d(t,e,(function(){return a[e]}))}(u);n("c971");var d,f=n("f0c5"),i=Object(f["a"])(a["default"],c["b"],c["c"],!1,null,"71d9c84a",null,!1,c["a"],d);t["default"]=i.exports},c971:function(e,t,n){"use strict";var c=n("687f"),a=n.n(c);a.a}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'components/my-swiper/my-swiper-create-component',
+    {
+        'components/my-swiper/my-swiper-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("9c96"))
+        })
+    },
+    [['components/my-swiper/my-swiper-create-component']]
+]);

@@ -1,0 +1,15 @@
+
+.m-cell{
+	margin-top: 20rpx;
+	margin-left: 40rpx;
+	margin-right: 40rpx;
+	background-color: #159FDE;
+	/* border: 2px solid #000000; */
+	box-shadow:0rpx 0rpx 10rpx #a6a6a6;
+}
+.m-avatar{
+	height: 200rpx;
+	padding: 20rpx 0rpx;
+	/* background-color: #159FDE; */
+}
+

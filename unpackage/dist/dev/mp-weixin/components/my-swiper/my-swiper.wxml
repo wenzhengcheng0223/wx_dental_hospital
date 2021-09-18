@@ -1,0 +1,1 @@
+<view class="wrap data-v-3f833c78"><u-swiper vue-id="9e3658e4-1" list="{{list}}" effect3d="{{true}}" title="true" height="300" border-radius="0" class="data-v-3f833c78" bind:__l="__l"></u-swiper></view>

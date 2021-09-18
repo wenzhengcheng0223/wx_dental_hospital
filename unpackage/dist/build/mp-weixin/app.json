@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/mine/mine",
+    "pages/index/index",
+    "pages/physician/physician",
+    "pages/appointment/appointment"
+  ],
+  "subPackages": [
+    {
+      "root": "other_page",
+      "pages": [
+        "container/richtext",
+        "container/webview",
+        "login/login",
+        "home/home"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTitleText": "祖码农口腔医院",
+    "navigationBarBackgroundColor": "#001f3f",
+    "navigationStyle": "custom",
+    "backgroundColor": "#000000"
+  },
+  "tabBar": {
+    "selectedColor": "#303133",
+    "backgroundColor": "#f4f4f4",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index"
+      },
+      {
+        "pagePath": "pages/physician/physician"
+      },
+      {
+        "pagePath": "pages/appointment/appointment"
+      },
+      {
+        "pagePath": "pages/mine/mine"
+      }
+    ]
+  },
+  "uniStatistics": {
+    "enable": true
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

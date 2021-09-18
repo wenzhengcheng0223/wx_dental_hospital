@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "u-parse": "/uview-ui/components/u-parse/u-parse"
+  }
+}

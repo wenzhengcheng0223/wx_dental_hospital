@@ -1,0 +1,95 @@
+{
+    "easycom" : {
+        "custom" : {
+            // easycom主键自动引入， 参考：https://uniapp.dcloud.net.cn/collocation/pages?id=easycom
+            "^u-(.*)" : "@/uview-ui/components/u-$1/u-$1.vue",
+			"^m-(.*)" : "@/components/m-$1/m-$1.vue"
+        }
+    },
+	"subPackages":[
+		{
+			"root":"other_page",
+			"pages":[
+				{
+					"path":"container/richtext"
+				},
+				{
+					"path":"container/webview"
+				},
+				{
+					"path":"login/login"
+				},
+				{
+					"path":"home/home"
+				}
+			]
+			
+		}
+	],
+    "pages" : [
+        //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        {
+			"path" : "pages/mine/mine",
+			
+			"style" : {
+			    "navigationStyle" : "custom"
+			}
+ 
+        },
+        {
+            "path" : "pages/index/index",
+            
+            "style" : {
+				"navigationStyle" : "custom"
+                // "enablePullDownRefresh" : false
+            }
+        }
+        ,{
+			"path" : "pages/physician/physician",
+            
+            "style" :                                                                                    
+            {
+				"navigationStyle" : "custom",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/appointment/appointment",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+				"navigationStyle" : "custom",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+    "globalStyle" : {
+        "navigationBarTitleText" : "祖码农口腔医院",
+		"navigationBarBackgroundColor" : "#001f3f",
+		"navigationStyle": "custom",
+		"backgroundColor": "#000000"
+    },
+    "tabBar" : {
+        // 采用自定义tabbar，uni-app提供路由
+        "selectedColor" : "#303133",
+        "backgroundColor" : "#f4f4f4",
+        "borderStyle" : "black",
+        "list" : [
+            {
+                "pagePath" : "pages/index/index"
+            },
+            {
+                "pagePath" : "pages/physician/physician"
+            },
+            {
+                "pagePath" : "pages/appointment/appointment"
+            },
+            {
+                "pagePath" : "pages/mine/mine"
+            }
+        ]
+    }
+}
