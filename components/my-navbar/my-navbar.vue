@@ -5,7 +5,7 @@
 		title-size="32"
 		title-width="3000"
 		title-color="#000000" 
-		title="祖码农口腔医院" 
+		:title="mTitle" 
 		border-bottom="true"
 		:background="background">
 			<view class="slot-wrap">
@@ -17,6 +17,12 @@
 
 <script>
 	export default {
+		props:{
+			mTitle:{
+				type:String,
+				default:"祖码农口腔医院"
+			}
+		},
 		data() {
 			return {
 				background: {
@@ -34,7 +40,13 @@
 					
 				}
 			}
+		},
+		methods:{
+			getTitle(msg){
+				this.mTitle = msg
+			}
 		}
+		
 	}
 </script>
 

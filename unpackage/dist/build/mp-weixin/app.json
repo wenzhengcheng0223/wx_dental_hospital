@@ -1,9 +1,13 @@
 {
   "pages": [
-    "pages/mine/mine",
-    "pages/index/index",
+    "pages/login/login",
+    "pages/order/order",
     "pages/physician/physician",
-    "pages/appointment/appointment"
+    "pages/detail/detail",
+    "pages/mine/mine",
+    "pages/appointment/appointment",
+    "pages/index/index",
+    "pages/authorize/authorize"
   ],
   "subPackages": [
     {
@@ -20,11 +24,11 @@
     "navigationBarTitleText": "祖码农口腔医院",
     "navigationBarBackgroundColor": "#001f3f",
     "navigationStyle": "custom",
-    "backgroundColor": "#000000"
+    "backgroundColor": "#f3f3f3"
   },
   "tabBar": {
     "selectedColor": "#303133",
-    "backgroundColor": "#f4f4f4",
+    "backgroundColor": "#f3f3f3",
     "borderStyle": "black",
     "list": [
       {

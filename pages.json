@@ -3,7 +3,8 @@
         "custom" : {
             // easycom主键自动引入， 参考：https://uniapp.dcloud.net.cn/collocation/pages?id=easycom
             "^u-(.*)" : "@/uview-ui/components/u-$1/u-$1.vue",
-			"^m-(.*)" : "@/components/m-$1/m-$1.vue"
+			"^m-(.*)" : "@/components/m-$1/m-$1.vue",
+			"wInput" : "@/components/login/watch-input.vue"
         }
     },
 	"subPackages":[
@@ -29,7 +30,7 @@
     "pages" : [
         //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
         {
-			"path" : "pages/mine/mine",
+			"path" : "pages/login/login",
 			
 			"style" : {
 			    "navigationStyle" : "custom"
@@ -37,8 +38,8 @@
  
         },
         {
-            "path" : "pages/index/index",
-            
+           
+            "path" : "pages/order/order",
             "style" : {
 				"navigationStyle" : "custom"
                 // "enablePullDownRefresh" : false
@@ -56,11 +57,50 @@
             
         }
         ,{
-            "path" : "pages/appointment/appointment",
+            "path" : "pages/detail/detail",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
 				"navigationStyle" : "custom",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/mine",
+            "style" :                                                                                    
+            {
+				"navigationStyle" : "custom",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/appointment/appointment",
+            "style" :                                                                                    
+            {
+				"navigationStyle" : "custom",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/index",
+            "style" :                                                                                    
+            {
+				"navigationStyle" : "custom",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/authorize/authorize",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
             
@@ -70,12 +110,12 @@
         "navigationBarTitleText" : "祖码农口腔医院",
 		"navigationBarBackgroundColor" : "#001f3f",
 		"navigationStyle": "custom",
-		"backgroundColor": "#000000"
+		"backgroundColor": "#f3f3f3"
     },
     "tabBar" : {
         // 采用自定义tabbar，uni-app提供路由
         "selectedColor" : "#303133",
-        "backgroundColor" : "#f4f4f4",
+        "backgroundColor" : "#f3f3f3",
         "borderStyle" : "black",
         "list" : [
             {

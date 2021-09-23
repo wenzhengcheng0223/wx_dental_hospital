@@ -6,7 +6,7 @@
 				:current="current" 
 				@change="tabsChange" 
 				:is-scroll="false"
-				bg-color="#c8c8c8"
+				bg-color="#eaeaea"
 				gutter="80"/>
 				<swiper  class="swiperbox" :current="swiperCurrent" @transition="transition" @animationfinish="animationfinish">
 					<swiper-item class="swiper-item">
@@ -28,11 +28,11 @@
 								</view>
 								<view slot="foot" class="card-foot">
 									<view class="card-foot u-padding-0">
-										<u-row gutter="" class="u-rela u-flex u-flex-nowrap">
+										<u-row  class="u-rela u-flex u-flex-nowrap">
 											<u-col span="24">
 												<view class=" u-flex u-flex-nowrap u-padding-0">
 													<view style="font-size: 28rpx;color: #1989FA;">
-														<text>￥{{item.money}}</text>
+														<text>￥{{item.price}}</text>
 													</view>
 													<view style="text-decoration:line-through;margin-left: 10rpx;">
 														<p>￥{{item.originalPrice}}</p>
@@ -45,7 +45,7 @@
 													</view>
 												</view>
 												<view class="u-abso" style="right: 2%;top: -8rpx;">
-													<u-button style="" shape="circle" size="mini" type="primary">主要按钮</u-button>
+													<u-button @click="submit(item)" style="" shape="circle" size="mini" type="primary">点击预约</u-button>
 												</view>
 											</u-col>
 										</u-row>
@@ -58,6 +58,7 @@
 						<scroll-view scroll-y style="height: 100%;width: 100%;">
 							<u-card 
 							v-for="(item,index) in allProject"
+							v-if="item.id == 2"
 							:key="index"
 							margin="10rpx 20rpx 30rpx 20rpx" 
 							:body-style="bodyStyle" 
@@ -73,11 +74,11 @@
 								</view>
 								<view slot="foot" class="card-foot">
 									<view class="card-foot u-padding-0">
-										<u-row gutter="" class="u-rela u-flex u-flex-nowrap">
+										<u-row  class="u-rela u-flex u-flex-nowrap">
 											<u-col span="24">
 												<view class=" u-flex u-flex-nowrap u-padding-0">
 													<view style="font-size: 28rpx;color: #1989FA;">
-														<text>￥{{item.money}}</text>
+														<text>￥{{item.price}}</text>
 													</view>
 													<view style="text-decoration:line-through;margin-left: 10rpx;">
 														<p>￥{{item.originalPrice}}</p>
@@ -90,7 +91,7 @@
 													</view>
 												</view>
 												<view class="u-abso" style="right: 2%;top: -8rpx;">
-													<u-button style="" shape="circle" size="mini" type="primary">主要按钮</u-button>
+													<u-button @click="submit(item)" style="" shape="circle" size="mini" type="primary">点击预约</u-button>
 												</view>
 											</u-col>
 										</u-row>
@@ -103,6 +104,7 @@
 						<scroll-view scroll-y style="height: 100%;width: 100%;">
 							<u-card 
 							v-for="(item,index) in allProject"
+							v-if="item.id == 2"
 							:key="index"
 							margin="10rpx 20rpx 30rpx 20rpx" 
 							:body-style="bodyStyle" 
@@ -118,11 +120,11 @@
 								</view>
 								<view slot="foot" class="card-foot">
 									<view class="card-foot u-padding-0">
-										<u-row gutter="" class="u-rela u-flex u-flex-nowrap">
+										<u-row  class="u-rela u-flex u-flex-nowrap">
 											<u-col span="24">
 												<view class=" u-flex u-flex-nowrap u-padding-0">
 													<view style="font-size: 28rpx;color: #1989FA;">
-														<text>￥{{item.money}}</text>
+														<text>￥{{item.price}}</text>
 													</view>
 													<view style="text-decoration:line-through;margin-left: 10rpx;">
 														<p>￥{{item.originalPrice}}</p>
@@ -135,7 +137,7 @@
 													</view>
 												</view>
 												<view class="u-abso" style="right: 2%;top: -8rpx;">
-													<u-button style="" shape="circle" size="mini" type="primary">主要按钮</u-button>
+													<u-button @click="submit(item)" style="" shape="circle" size="mini" type="primary">点击预约</u-button>
 												</view>
 											</u-col>
 										</u-row>
@@ -148,6 +150,7 @@
 						<scroll-view scroll-y style="height: 100%;width: 100%;">
 							<u-card 
 							v-for="(item,index) in allProject"
+							v-if="item.id == 2"
 							:key="index"
 							margin="10rpx 20rpx 30rpx 20rpx" 
 							:body-style="bodyStyle" 
@@ -163,11 +166,11 @@
 								</view>
 								<view slot="foot" class="card-foot">
 									<view class="card-foot u-padding-0">
-										<u-row gutter="" class="u-rela u-flex u-flex-nowrap">
+										<u-row  class="u-rela u-flex u-flex-nowrap">
 											<u-col span="24">
 												<view class=" u-flex u-flex-nowrap u-padding-0">
 													<view style="font-size: 28rpx;color: #1989FA;">
-														<text>￥{{item.money}}</text>
+														<text>￥{{item.price}}</text>
 													</view>
 													<view style="text-decoration:line-through;margin-left: 10rpx;">
 														<p>￥{{item.originalPrice}}</p>
@@ -180,7 +183,7 @@
 													</view>
 												</view>
 												<view class="u-abso" style="right: 2%;top: -8rpx;">
-													<u-button style="" shape="circle" size="mini" type="primary">主要按钮</u-button>
+													<u-button @click="submit(item)" style="" shape="circle" size="mini" type="primary">点击预约</u-button>
 												</view>
 											</u-col>
 										</u-row>
@@ -229,26 +232,32 @@
 				swiperCurrent: 0, // swiper组件的current值，表示当前那个swiper-item是活动的
 				allProject:[
 					{
+						id:'1',
+						type:'',
 						img:'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-a9e890e8-9456-42bd-8ad5-cc3d81f39d95/c82192f4-56b7-4af1-876c-e17aa3c92ae0.jpg',
 						title:'3D超薄瓷贴面',
 						subTitle:'3M陶瓷托槽，一般预计正畸疗程1-2年左右，主要看病人畸形程度',
-						money:'5000.00',
+						price:'5000.00',
 						originalPrice:'10000',
 						reserved:'15',
 						balance:'85'
 					},{
+						id:'1',
+						type:'',
 						img:'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-a9e890e8-9456-42bd-8ad5-cc3d81f39d95/e8290670-2867-4215-a28a-bd586e6bf880.jpg',
 						title:'美学牙齿纠正治疗',
 						subTitle:'3M陶瓷托槽，一般预计正畸疗程1-2年左右，主要看病人畸形程度',
-						money:'3000.00',
+						price:'3000.00',
 						originalPrice:'8000',
 						reserved:'5',
 						balance:'95'
 					},{
+						id:'2',
+						type:'',
 						img:'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-a9e890e8-9456-42bd-8ad5-cc3d81f39d95/d3b8c4b6-1962-41c8-b685-a8085a6d4399.jpg',
 						title:'现代化种植牙技术',
 						subTitle:'3M陶瓷托槽，一般预计正畸疗程1-2年左右，主要看病人畸形程度',
-						money:'8000.00',
+						price:'8000.00',
 						originalPrice:'14000',
 						reserved:'1',
 						balance:'100'
@@ -272,7 +281,19 @@
                 this.$refs.uTabs.setFinishCurrent(current);
                 this.swiperCurrent = current;
                 this.current = current;
-            }
+            },
+			submit(e){
+				this.$u.route('/pages/detail/detail',{
+					id:e.id,
+					img:e.img,
+					title:e.title,
+					subTitle:e.subTitle,
+					price:e.price,
+					originalPrice:e.originalPrice,
+					
+				})
+			}
+			
 		}
 	}
 </script>

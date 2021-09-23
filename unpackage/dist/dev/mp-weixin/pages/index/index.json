@@ -1,5 +1,7 @@
 {
   "navigationStyle": "custom",
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
   "usingComponents": {
     "my-navbar": "/components/my-navbar/my-navbar",
     "my-swiper": "/components/my-swiper/my-swiper",

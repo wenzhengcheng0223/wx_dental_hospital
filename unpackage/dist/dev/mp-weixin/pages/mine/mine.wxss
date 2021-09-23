@@ -1,15 +1,26 @@
 
+.m-avatar-img{
+	height: 150rpx;
+	width: 150rpx;
+	position: relative;
+	left: 40%;
+	border-radius: 50px;
+	box-shadow: 0rpx 2rpx 10rpx #000000;
+}
 .m-cell{
 	margin-top: 20rpx;
 	margin-left: 40rpx;
 	margin-right: 40rpx;
 	background-color: #159FDE;
-	/* border: 2px solid #000000; */
-	box-shadow:0rpx 0rpx 10rpx #a6a6a6;
+	/* border: 1rpx solid #878787; */
+	/* border-radius: 20rpx; */
+	box-shadow:0rpx 0rpx 10rpx #878787;
 }
 .m-avatar{
-	height: 200rpx;
-	padding: 20rpx 0rpx;
-	/* background-color: #159FDE; */
+	z-index: -1;
+	height: 350rpx;
+	padding: 40rpx 0rpx;
+	padding-top: 50rpx;
+	background-color: #159FDE;
 }
 

@@ -14,7 +14,7 @@ module.exports = {
   /**
 	 * 开发环境host
 	 */
-  devHost: 'http://localhost:9090',
+  devHost: 'https://www.fastmock.site/mock/afd80515f2decda152a5f69295a3dce1',
   /**
 	 * 测试环境转发规则
 	 */
@@ -22,7 +22,7 @@ module.exports = {
   /**
 	 * 生产环境host
 	 */
-  prodHost: 'http://www.baidu.com',
+  prodHost: 'https://www.fastmock.site/mock/afd80515f2decda152a5f69295a3dce1',
   /**
 	 * 生产环境转发规则
 	 */

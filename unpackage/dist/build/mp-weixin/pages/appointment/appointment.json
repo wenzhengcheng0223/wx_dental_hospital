@@ -1,6 +1,6 @@
 {
-  "navigationBarTitleText": "",
   "navigationStyle": "custom",
+  "navigationBarTitleText": "",
   "enablePullDownRefresh": false,
   "usingComponents": {
     "my-navbar": "/components/my-navbar/my-navbar",

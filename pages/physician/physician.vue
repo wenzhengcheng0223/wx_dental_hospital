@@ -50,7 +50,7 @@
 						<u-input :border="true" v-model="form.name"></u-input>
 					</u-form-item>
 					<u-form-item label="电 话:" prop="phone">
-						<u-input :border="true" v-model="form.phone"></u-input>
+						<u-input type="number" :border="true" v-model="form.phone"></u-input>
 					</u-form-item>
 					<u-form-item label="患者类型:" prop="type" label-width="140">
 						<u-radio-group @change="radioChangeValue" v-model="form.type">

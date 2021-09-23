@@ -3,15 +3,17 @@
 		<my-navbar></my-navbar>
 		<view>
 			<view class="u-text-center m-avatar">
-				<u-avatar :src="avatar" size="150"></u-avatar>
-				<view class="u-text-center u-font-18">
-					<text>文正成</text>
+				<view class="m-avatar-img u-text-center">
+					<u-avatar :src="avatar" size="150" bg-color="#fefefe"> </u-avatar>
+				</view>
+				<view class="u-text-center u-font-18" style="margin-top: 18rpx;">
+					<text style="color: #fefefe;">欢迎您：{{name}}</text>
 				</view>
 			</view>
 			
-			<view class="m-cell" style="margin-top: 40rpx;">
+			<view class="m-cell" style="margin-top: -40rpx;">
 				<u-cell-group>
-						<u-cell-item title="所有订单"></u-cell-item>
+						<u-cell-item @click="getOrder()" title="所有订单"></u-cell-item>
 							<u-grid :col="3">
 									<u-grid-item>
 										<u-icon :size="60" name="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-a9e890e8-9456-42bd-8ad5-cc3d81f39d95/2efb8ae3-d232-42dd-aa8f-346ed67deec5.png" ></u-icon>
@@ -53,28 +55,41 @@
 	export default {
 		data() {
 			return {
-				avatar:'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-a9e890e8-9456-42bd-8ad5-cc3d81f39d95/f0c28e01-7aa3-4141-b4f5-865648b89fa0.png'
+				avatar:'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-a9e890e8-9456-42bd-8ad5-cc3d81f39d95/f0c28e01-7aa3-4141-b4f5-865648b89fa0.png',
+				name:'文正成'
 			}
 		},
 		methods: {
-			
+			getOrder(){
+				this.$u.route('/pages/order/order')
+			}
 		}
 	}
 </script>
 
 <style>
-
+	.m-avatar-img{
+		height: 150rpx;
+		width: 150rpx;
+		position: relative;
+		left: 40%;
+		border-radius: 50px;
+		box-shadow: 0rpx 2rpx 10rpx #000000;
+	}
 	.m-cell{
 		margin-top: 20rpx;
 		margin-left: 40rpx;
 		margin-right: 40rpx;
 		background-color: #159FDE;
-		/* border: 2px solid #000000; */
-		box-shadow:0rpx 0rpx 10rpx #a6a6a6;
+		/* border: 1rpx solid #878787; */
+		/* border-radius: 20rpx; */
+		box-shadow:0rpx 0rpx 10rpx #878787;
 	}
 	.m-avatar{
-		height: 200rpx;
-		padding: 20rpx 0rpx;
-		/* background-color: #159FDE; */
+		z-index: -1;
+		height: 350rpx;
+		padding: 40rpx 0rpx;
+		padding-top: 50rpx;
+		background-color: #159FDE;
 	}
 </style>
