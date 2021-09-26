@@ -101,6 +101,8 @@
 								title:'正在获取授权信息',
 							})
 							that.userInfo = e.userInfo
+							console.log(e)
+							uni.setStorageSync("userInfo",that.userInfo)
 							that.login()
 						},
 						fail() {
@@ -130,6 +132,7 @@
 								mask:true,
 								icon:'success'
 							})	
+							console.log(e)
 							console.log('授权中')	
 							that.toIndex()
 						}

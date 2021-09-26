@@ -1,5 +1,5 @@
 
-.m-avatar-img{
+.m-avatar-img {
 	height: 150rpx;
 	width: 150rpx;
 	position: relative;
@@ -7,16 +7,16 @@
 	border-radius: 50px;
 	box-shadow: 0rpx 2rpx 10rpx #000000;
 }
-.m-cell{
+.m-cell {
 	margin-top: 20rpx;
 	margin-left: 40rpx;
 	margin-right: 40rpx;
 	background-color: #159FDE;
 	/* border: 1rpx solid #878787; */
 	/* border-radius: 20rpx; */
-	box-shadow:0rpx 0rpx 10rpx #878787;
+	box-shadow: 0rpx 0rpx 10rpx #878787;
 }
-.m-avatar{
+.m-avatar {
 	z-index: -1;
 	height: 350rpx;
 	padding: 40rpx 0rpx;
