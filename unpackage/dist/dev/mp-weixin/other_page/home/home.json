@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-    "my-navbar": "/components/my-navbar/my-navbar",
-    "my-tabbar": "/components/my-tabbar/my-tabbar"
-  }
-}

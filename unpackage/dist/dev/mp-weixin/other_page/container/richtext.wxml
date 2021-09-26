@@ -1,1 +1,0 @@
-<view><u-parse vue-id="58ec6088-1" html="{{richText}}" selectable="{{true}}" lazy-load="{{true}}" show-with-animation="{{true}}" bind:__l="__l"></u-parse></view>

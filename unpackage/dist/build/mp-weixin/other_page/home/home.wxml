@@ -1,1 +1,0 @@
-<view><my-navbar vue-id="eac1914c-1" bind:__l="__l"></my-navbar><view><view class="_h1">text</view></view><my-tabbar vue-id="eac1914c-2" bind:__l="__l"></my-tabbar></view>
