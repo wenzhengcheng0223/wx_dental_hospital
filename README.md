@@ -60,17 +60,17 @@
 
 #### 小程序端页面效果演示
 
-![](\static\images\登录.png)
+![](https://gitee.com/peacefulCC/images/raw/master/images/markdown/登录.png)
 
-![](\static\images\授权.png)
+![](https://gitee.com/peacefulCC/images/raw/master/images/markdown/授权.png)
 
-![](\static\images\首页.png)
+![](https://gitee.com/peacefulCC/images/raw/master/images/markdown/首页.png)
 
-![](\static\images\医师.png)
+![](https://gitee.com/peacefulCC/images/raw/master/images/markdown/医师.png)
 
-![](\static\images\预约.png)
+![](https://gitee.com/peacefulCC/images/raw/master/images/markdown/预约.png)
 
-![](\static\images\我的.png)
+![](https://gitee.com/peacefulCC/images/raw/master/images/markdown/我的.png)
 
 #### 参与贡献
 
