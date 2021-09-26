@@ -11,8 +11,11 @@ $RECYCLE.BIN/
 .Trashes
 
 # Node.js
-node_modules/
+node_modules
 
 # HBuilder X
 .hbuilderx
 unpackage
+/package.json
+/package-lock.json
+/__MACOSX/wxcomponents/._.DS_Store
