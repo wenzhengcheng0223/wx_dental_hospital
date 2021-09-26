@@ -60,19 +60,17 @@
 
 #### 小程序端页面效果演示
 
-<img src="C:\Users\86914\AppData\Roaming\Typora\typora-user-images\image-20210926235430463.png" alt="image-20210926235430463"  />
+![](\static\images\登录.png)
 
-![image-20210926235530567](C:\Users\86914\AppData\Roaming\Typora\typora-user-images\image-20210926235530567.png)
+![](\static\images\授权.png)
 
-![image-20210927000720726](C:\Users\86914\AppData\Roaming\Typora\typora-user-images\image-20210927000720726.png)
+![](\static\images\首页.png)
 
-![image-20210927000737274](C:\Users\86914\AppData\Roaming\Typora\typora-user-images\image-20210927000737274.png)
+![](\static\images\医师.png)
 
-![image-20210927000754972](C:\Users\86914\AppData\Roaming\Typora\typora-user-images\image-20210927000754972.png)
+![](\static\images\预约.png)
 
-![image-20210927000812420](C:\Users\86914\AppData\Roaming\Typora\typora-user-images\image-20210927000812420.png)
-
-
+![](\static\images\我的.png)
 
 #### 参与贡献
 
