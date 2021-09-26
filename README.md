@@ -49,7 +49,7 @@
 1. 克隆该代码到你自己的电脑上
 
    ``` 
-   git clone https://gitee.com/zmn_repository/wx_dental_hospital.git
+   git clone https://github.com/WenZhengcheng0223/wx_dental_hospital.git
    ```
 
 2.  使用HBuilder编辑器打开项目，如果你电脑上没有该编辑工具请下载：https://www.dcloud.io/hbuilderx.html
