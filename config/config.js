@@ -6,7 +6,7 @@ module.exports = {
   /**
 	 * 应用名
 	 */
-  name: 'uview-uni-cli',
+  name: '祖码农口腔医院预约平台',
   /**
 	 * 版本
 	 */
